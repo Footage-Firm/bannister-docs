@@ -114,3 +114,5 @@ Here's an example:
     tests: java -cp 'lib/*:build/classes' meta.DumpTests # This can also be a static list of test units to run, if a string is given, this command is executed using a new container created with the above image
     command: ant runtest -f /selenium/build.xml -Dtest={{ testUnitClass }} -Dmethods={{ testUnitMethod }}
 ```
+
+> **Note:** Currently, `selenium` is the only supported test type
