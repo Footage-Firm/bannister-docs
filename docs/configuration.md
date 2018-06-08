@@ -1,5 +1,3 @@
-[TOC]
-
 ## Directory structure
 
 In the root of your code base, create a folder called `.ciblocks`.

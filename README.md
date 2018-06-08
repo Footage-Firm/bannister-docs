@@ -1,13 +1,13 @@
 # Public CiBlocks documentation
 
-We're using [Daux](https://dauxio.github.io) to generate documentation from markdown files.
+We're using [docsify](https://docsify.js.org) to generate documentation from markdown files.
 
 To generate a new copy:
 
 ```
-# Install daux (globally)
-composer global require daux/daux.io
+# Install docsify (globally)
+npm i docsify-cli -g
 
-# From the root of this repository, run:
-daux generate
+# Preview the documentation
+docsify serve docs
 ```
