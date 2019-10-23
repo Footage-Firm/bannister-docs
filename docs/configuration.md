@@ -94,6 +94,10 @@ Creates a new container and runs a command within it. Useful if you need to run 
     image: myorganization/assets-builder # Image to pull and run
     commands: npm run build assets
     volumes: "{{ checkoutPath }}:{{ checkoutPath }}" # You can mount any path(s) here
+    environment:
+        ENV_VAR_1:    #leave this blank to pull from your project envs
+        OTHER_ENV_VAR: "some_value"
+    network: some_other_network  # this is always appened with your current workspace id
 ```
 
 #### `run_tests`
